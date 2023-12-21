@@ -1,0 +1,215 @@
+/* Detalles del Contenedor */
+.detallesContenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* Columna Principal */
+.columna {
+    max-width: 520px;
+    height: 80%;
+    width: 80%;
+    margin: 25px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: appear 0.5s ease-in-out forwards 0.2s; /* Retraso de 0.2 segundos */
+}
+
+/* Título */
+.tituloDes {
+    margin-top: 15px;
+    font-size: 2.5rem;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: appear 0.5s ease-in-out forwards 0.4s; /* Retraso de 0.4 segundos */
+}
+
+
+
+
+/* Imagen de la Película */
+.imagenPelicula {
+    border-radius: 20px;
+    border: 6px solid beige;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: appear 0.5s ease-in-out forwards; /* Sin retraso */
+}
+
+/* Detalles de la Película */
+.detallePeliculas {
+    font-size: 1.2rem;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: appear 0.5s ease-in-out forwards 0.2s; /* Retraso de 0.2 segundos */
+}
+
+/* Contenedor de Géneros */
+.contenedorGenero {
+    border: 2px solid white;
+    height: 20px;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: appear 0.5s ease-in-out forwards 0.4s; /* Retraso de 0.4 segundos */
+}
+
+/* Título del Reparto */
+.castTittle {
+    text-align: center;
+    padding: 5px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: appear 0.5s ease-in-out forwards 0.5s; /* Retraso de 0.5 segundos */
+}
+
+/* Galería de Actores */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: appear 0.5s ease-in-out forwards 0.7s; /* Retraso de 0.7 segundos */
+}
+
+/* Caja de Actor */
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 125px;
+    height: 12px;
+    border: 2px solid skyblue;
+    background-position: center;
+    background-size: cover;
+    margin: 5px;
+    border-radius: 50%;
+    position: relative;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: appear 0.5s ease-in-out forwards 0.7s; /* Retraso de 0.7 segundos */
+}
+
+.box h3 {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Contenedor del Reparto */
+.castConteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: appear 0.5s ease-in-out forwards 0.9s; /* Retraso de 0.9 segundos */
+}
+
+/* Lista de Actores */
+.actorList {
+    list-style: none;
+}
+
+/* Contenedor de Actor */
+.actorContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style: none;
+    max-width: 750px;
+    margin-top: 20px;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: appear 0.5s ease-in-out forwards 1s; /* Retraso de 1 segundo */
+}
+
+/* Imagen del Actor */
+.actorImage {
+    height: 200px;
+    aspect-ratio: 1/1;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: appear 0.5s ease-in-out forwards 1.1s; /* Retraso de 1.1 segundos */
+}
+
+/* Contenedor del Carrusel */
+.ScoreContainer {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: appear 0.5s ease-in-out forwards 1.3s; /* Retraso de 1.3 segundos */
+}
+
+/* Nombre del Carrusel */
+.nameCarrucel {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: appear 0.5s ease-in-out forwards 1.5s; /* Retraso de 1.5 segundos */
+}
+
+/* Carrusel */
+.swiper {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative; /* Agrega posición relativa al contenedor del carrusel */
+
+    /* Agrega estilos para el reflejo */
+    &:before {
+        content: "";
+        position: absolute;
+        top: 100%; /* Sitúa el reflejo debajo del carrusel */
+        left: 0;
+        width: 100%;
+        height: 20px; /* Altura del reflejo */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+        transform: scaleY(-1); /* Invierte el reflejo verticalmente */
+        transform-origin: bottom; /* Define el punto de origen en la parte inferior */
+    }
+
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: appear 0.5s ease-in-out forwards 1.5s; /* Retraso de 1.5 segundos */
+}
+
+/* Diapositiva del Carrusel */
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: appear 0.5s ease-in-out forwards 1.5s; /* Retraso de 1.5 segundos */
+}
+
+/* Imagen de la Diapositiva del Carrusel */
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: appear 0.5s ease-in-out forwards 1.5s; /* Retraso de 1.5 segundos */
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 480px) {
+  .tituloDes {
+      font-size: 1.8rem;
+  }
+
+}

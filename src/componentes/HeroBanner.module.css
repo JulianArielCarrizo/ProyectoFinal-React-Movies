@@ -1,0 +1,73 @@
+.heroConteiner {
+  height: 600px;
+  width: 100%;
+  padding: 35px;
+  background-position: center;
+  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+  position: relative;
+}
+  
+
+.gradientOverlay {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  transition: opacity 2s ease-in-out;
+  opacity: 1;
+}
+
+.dataHeroConteiner {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  max-width: 600px;
+  width: 90%; 
+  padding: 20px;
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+.heroInfoButtom {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #1B1B7D;
+  border: 2px solid #1B1B7D;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+
+h2 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  overflow-wrap: break-word; 
+  font-weight: 900;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  overflow-wrap: break-word; 
+}
+
+.heroConteiner {
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.heroConteiner.isFading {
+  opacity: 0;
+}

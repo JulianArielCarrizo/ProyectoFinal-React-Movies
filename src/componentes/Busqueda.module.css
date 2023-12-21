@@ -1,0 +1,31 @@
+.contenedorBusqueda{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.cajaBusqueda{
+position: relative;
+}
+.botonBusqueda{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    height: 100%;
+    border: none;
+    background: none;
+    padding: 5px;
+}
+.entradaBusqueda{
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    padding:5px 60px 6px 12px;
+}
+.entradaBusqueda:focus{
+    outline:none;
+    border: 2px solid #6698;
+    box-shadow: 0 0 7px #ebbaf2;
+}

@@ -1,0 +1,10 @@
+.tituloPrincipal{
+  font-size: 3.5rem;
+  text-align: center;
+  text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px lightskyblue, 0 0 40px lightskyblue,0 0 50px #e62444,0 0 60px #e62444,0 0 70px #e62444;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
